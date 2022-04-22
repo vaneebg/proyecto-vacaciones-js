@@ -580,36 +580,47 @@ function checkPassword(a) {
 console.log("calculadora inversa")
 
 function CalculadoraInversa(a, b, c) {
-    a = document.getElementById("number1");
-    c = document.getElementById("operacion");
-    b = document.getElementById("number2");
+    a = document.getElementById("number1").value;
+
+    //    console.log(a) nos dice que es un object, y lo que nos interesa es el valor de ese, accedemos a su propiedad
+
+    c = document.getElementById("operacion").value;
+    b = document.getElementById("number2").value;
     a = Number(a);
     b = Number(b);
     c = String(c);
-    console.log(typeof a);
-    console.log(typeof b);
-    console.log(typeof c);
+    let suma;
+
+
     switch (c) {
         case "+":
-            console.log("hola")
+            let suma = a + b
+            console.log(suma)
             break;
+
         case "-":
-            return a - b
+            let resta = a - b
+            console.log(resta)
             break;
 
         case "*":
-            return a * b
+            let multi = a * b
+            console.log(multi)
             break;
 
         case "/":
-            return a / b
+            let div = a / b
+            console.log(div)
             break;
 
-        case "^":
-            return a ^ b
+        case "**":
+            let exp = a ** b
+            console.log(exp)
+                // la ^ no la reconoce, es **
             break;
         case "%":
-            return a % b
+            let resto = a % b
+            console.log(resto)
             break;
 
     }
