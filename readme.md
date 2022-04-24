@@ -1,4 +1,4 @@
- PROYECTO VACACIONES JAVASCRIPT
+# PROYECTO VACACIONES JAVASCRIPT
 
 ### Trata sobre la consolidación de los conocimientos de Javascript.
 ---
@@ -10,10 +10,11 @@
 ## Partes de las que consta el proyecto ##
 
 Tendremos 4 partes:
-- *Bucles* : Indiciendo también en for of para recorrer el bloque de código de las arrays.
-- *Objetos* : Creación de un objeto que cumpla con todas las condiciones dadas en los if posteriores.
-- *Funciones*: Crear funciones enlazando conocimientos de los condicionales, operadores lógicos, etc.
-- *Katas*: Realización de varias katas dentro de la página web codewars. Son las siguientes:
+-  **Bucles**: Indiciendo también en for of para recorrer el bloque de código de las arrays.
+- **Objetos** : Creación de un objeto que cumpla con todas las condiciones dadas en los if posteriores.
+- **Funciones**: Crear funciones enlazando conocimientos de los condicionales, operadores lógicos, etc. Hay 3 funciones, _NumeroPrimo_, _checkPassword_ y _CalculadoraInversa_ cuya función es llamada mediante el botón de cada una en el html para hacer más manejable el uso de prompt y que no salte en cuanto se cargue la página. 
+En lo referente a la calculadora, he usado una solución algo más compleja de lo que se pedía simplemente por probar el enlazamiento de js con inputs con sus respectivas label.
+- **Katas**: Realización de varias katas dentro de la página web codewars. Son las siguientes:
 ```
 https://www.codewars.com/kata/562926c855ca9fdc4800005b/train/javascript
 https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/train/javascript
@@ -45,10 +46,18 @@ Para desplegar este proyecto, lo primero que debes hacer es clonarte el reposito
 ### Una vez entres en el link, debes dirigirte al _botón de Code_. Ahí encontrarás varias opciones como descargar en formato zip o la posibilidad de clonarte el repositorio copiando el enlace y poniendo en la consola de git : _git clone titulorepo1_
 ---
 ## Vista Previa ##
+* **HTML con botones**
+![foto](/VISTA%20PREVIA.png)
 
-
+* **Bucles**
+![foto](/BUCLES.png)
 ---
 
+* **Objetos**
+![foto](/bojetos.png)
+
+* **Funciones**
+![foto](/funciones.png)
 
 ## Autor ##
 Este proyecto fue desarrollado por [Vanesa Beltrán Guillén](https://github.com/vaneebg)

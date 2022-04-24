@@ -589,7 +589,7 @@ function CalculadoraInversa(a, b, c) {
     a = Number(a);
     b = Number(b);
     c = String(c);
-    let suma;
+
 
 
     switch (c) {
