@@ -1,10 +1,10 @@
 # PROYECTO VACACIONES JAVASCRIPT
 
-### Trata sobre la consolidación de los conocimientos de Javascript.
+#### Trata sobre la consolidación de los conocimientos de Javascript.
 ---
 
 ## Descripción ##
-### Ha consistido en realizar varios ejercicios divididos en 4 partes poniendo en práctica los conocimientos dados en el Ramp-up y también desarrollando más la habilidad para buscar recursos nuevos sobre lecciones que no nos resulten familiares por las clases.
+#### Ha consistido en realizar varios ejercicios divididos en 4 partes poniendo en práctica los conocimientos dados en el Ramp-up y también desarrollando más la habilidad para buscar recursos nuevos sobre lecciones que no nos resulten familiares por las clases.
 ---
 
 ## Partes de las que consta el proyecto ##
