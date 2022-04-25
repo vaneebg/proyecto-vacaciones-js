@@ -305,7 +305,7 @@ if (arr[2].name[0] === "J") {
 // Crea la función convierteString debe recibir un tipo number y devolver el número como string .
 // Si la función no recibe un dato tipo number debe devolver el string 'Debo ser ejecutada con un número'
 console.log("function converteString")
-console.log("AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII")
+
 
 function convierteString(a) {
     console.log("este es el tipo de dato que introduces:", typeof a)
