@@ -40,7 +40,7 @@ _Este proyecto fue desarrollado con el siguiente lenguaje de programación:_
 Para desplegar este proyecto, lo primero que debes hacer es clonarte el repositorio que enlazo aquí:
 
 ```
-
+https://github.com/vaneebg/proyecto-vacaciones-js
 ```
 
 ### Una vez entres en el link, debes dirigirte al _botón de Code_. Ahí encontrarás varias opciones como descargar en formato zip o la posibilidad de clonarte el repositorio copiando el enlace y poniendo en la consola de git : _git clone titulorepo1_
