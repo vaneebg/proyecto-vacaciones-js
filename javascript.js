@@ -307,6 +307,7 @@ if (arr[2].name[0] === "J") {
 console.log("function converteString")
 
 
+
 function convierteString(a) {
     console.log("este es el tipo de dato que introduces:", typeof a)
     if (typeof a === "number") {
@@ -314,35 +315,36 @@ function convierteString(a) {
         a = String(a)
 
         console.log("tú dato ya está convertido a string, ahora este es su tipo:", typeof a)
-        console.log("tu string:", a)
+        return `tu string: ${a} `
     } else {
-        console.log("Debo ser ejecutada con un número")
+        return "Debo ser ejecutada con un número"
     }
 }
-convierteString(7)
-convierteString("hola")
+console.log(convierteString(9))
+console.log(convierteString("hola"))
     // Crea la función caracterInicial  debe recibir un tipo string y devolver un string con el primer carácter. 
     // Si la función no recibe un dato tipo string debe devolver el string 'Debo ser ejecutada con un string'. 
     // Si recibe un string vacío debe devolver 'Debo ser ejecutada con un string no vacío'
 console.log("function caracterInicial")
 
+
 function caracterInicial(a) {
     console.log("tú tipo de dato es:", typeof a)
     if (typeof a === "string") {
         if (a != "") {
-            console.log("este es su primer caracter", a.charAt(0))
+            return `este es su primer caracter ${a.charAt(0)}`
         } else {
-            console.log("Debo ser ejecutada con un string no vacío")
+            return "Debo ser ejecutada con un string no vacío"
         }
     } else {
-        console.log("debo ser ejecutada con un string")
+        return "debo ser ejecutada con un string"
     }
 }
 
 
-caracterInicial("jelou")
-caracterInicial("")
-caracterInicial(7)
+console.log(caracterInicial("jelou"))
+console.log(caracterInicial(""))
+console.log(caracterInicial(7))
 
 
 // Crea la función ultimoCaracter debe recibir un tipo string y devolver un string con el último carácter.
@@ -350,25 +352,27 @@ caracterInicial(7)
 // Si recibe un string vacío debe devolver 'Debo ser ejecutada con un string no vacío'
 console.log("function ultimoCaracter")
 
+
 function ultimoCaracter(a) {
     console.log("tú tipo de dato es:", typeof a)
     if (typeof a === "string") {
         if (a != "") {
-            console.log("este es su último caracter", a.charAt(a.length - 1))
+            return `este es su último caracter  ${a.charAt(a.length - 1)}`
         } else {
-            console.log("Debo ser ejecutada con un string no vacío")
+            return "Debo ser ejecutada con un string no vacío"
         }
     } else {
-        console.log("debo ser ejecutada con un string")
+        return "debo ser ejecutada con un string"
     }
 }
-ultimoCaracter("hola a todos")
-ultimoCaracter(10)
-ultimoCaracter("")
+console.log(ultimoCaracter("hola a todos"))
+console.log(ultimoCaracter(10))
+console.log(ultimoCaracter(""))
 
 // Crea la función cuentaCaracteres debe recibir un tipo string y devolver un number con el número de carácteres
 // Si la función no recibe un dato tipo string debe devolver el string 'Debo ser ejecutada con un string'
 console.log("functioncuentaCaracteres")
+
 
 function cuentaCaracteres(a) {
     console.log("tu tipo de dato introducido es:", typeof a)
@@ -377,13 +381,13 @@ function cuentaCaracteres(a) {
         a = Number(a.length)
 
         console.log("tú dato ya está convertido a number, ahora este es su tipo:", typeof a)
-        console.log("tu number con el número de carácteres:", a)
+        return `tu number con el número de carácteres: ${a}`
     } else {
-        console.log("Debo ser ejecutada con un string")
+        return "Debo ser ejecutada con un string"
     }
 }
-cuentaCaracteres("pueblo")
-cuentaCaracteres(6)
+console.log(cuentaCaracteres("pueblo"))
+console.log(cuentaCaracteres(6))
 
 // Crea la función getCiudadesOrdenada. La función recibirá una cadena de texto de ciudades separadas por comas y devolverá un array de ciudades ordenadas alfabéticamente si la función no recibe una cadena de texto o recibe una cadena de texto sin comas debe devolver 'no es un formato correcto'
 console.log("function getCiudadesOrdenada")
@@ -392,15 +396,15 @@ console.log("function getCiudadesOrdenada")
 
 function getCiudadesOrdenada(a) {
     if (typeof a != "string" || a.includes(",") === false) {
-        console.log("no es un formato correcto")
+        return "no es un formato correcto"
     } else {
         const arrayCiudades = a.split(",")
-        console.log(arrayCiudades.sort())
+        return arrayCiudades.sort()
     }
 
 }
-getCiudadesOrdenada("berlin valencia castellón")
-getCiudadesOrdenada("berlin,valencia,castellón")
+console.log(getCiudadesOrdenada("berlin valencia castellón"))
+console.log(getCiudadesOrdenada("berlin,valencia,castellón,bocairent"))
     // si se ponen con espacios, no los ordena bien, mete los espacios antes
 
 
@@ -408,19 +412,23 @@ getCiudadesOrdenada("berlin,valencia,castellón")
 // Si la función no recibe una cadena de texto o está vacía 'no es un formato correcto'
 console.log("function esPalindromo")
 
+
 function esPalindromo(a) {
     if (typeof a != "string" || a === "") {
-        console.log("no es un formato correcto");
+        return "no es un formato correcto"
     } else if (a === a.split("").reverse().join("")) {
-        console.log("es una palabra palíndroma")
+        return "es una palabra palíndroma"
+    } else {
+        return "no es palíndroma"
     }
 
 }
 // Para invertir una cadena, primero  split() para convertirla en un objeto Después de eso, reverse() para invertir una cadena(no va con cadenas por eso transformo a objeto).  Para convertir este objeto de nuevo en una cadena,  join()
 
-esPalindromo("rallar");
-esPalindromo("");
-esPalindromo(7);
+console.log(esPalindromo("rallar"))
+console.log(esPalindromo(""))
+console.log(esPalindromo("hola"))
+console.log(esPalindromo(7))
 
 
 // Crea la función getPrecioMostrar para que devuelva una cadena de texto con formato precio con dos decimales. Para 2 debería devolver 2.00 €. 
@@ -430,14 +438,16 @@ console.log("function getPrecioMostrar")
 function getPrecioMostrar(a) {
     if (typeof a === "number") {
         a = a.toFixed(2)
-        console.log(a)
+        console.log("Ahora es un dato de tipo:", typeof a)
+        return `${a} €`
     } else {
-        console.log("no es un formato correcto")
+        return "no es un formato correcto"
     }
-    console.log("Ahora es un dato de tipo:", typeof a)
+
 }
-getPrecioMostrar(7.457)
-getPrecioMostrar("hola")
+
+console.log(getPrecioMostrar(7.457))
+console.log(getPrecioMostrar("hola"))
     // Crea la función division que acepte como argumento dos números y devuelva el resultado de su división
 console.log("function division")
 
@@ -449,55 +459,63 @@ console.log(division(8, 4))
 
 console.log("function esPar")
 
+
+
 function esPar(a) {
     if (a % 2 === 0) {
-        console.log("true")
+        return true
     } else {
-        console.log("false")
+        return false
     }
 }
-esPar(8)
-esPar(7)
+console.log(esPar(8))
+console.log(esPar(7))
     // Crear la función ordenarArray2 que acepta como argumento un array de números y devuelva un array ordenado de mayor a menor
 
 
 console.log("function ordenarArray2")
 
+
 function ordenarArray2(a) {
-    console.log("Array2 de mayor menor", a.sort((a, b) => b - a));
+    return `Array2 de mayor menor ${a.sort((a, b) => b - a)}`
 }
-ordenarArray2([1, 4, 2, 5, 3])
+console.log(ordenarArray2([1, 4, 2, 5, 3]))
     // Crear la función obtenerImpares que acepta como argumento un array de números y devuelva un array con los elementos impares
 
 
 console.log("function obtenerImpares")
 
-const Impares = []
+
+
 
 function obtenerImpares(array) {
+    const Impares = []
     for (let numero of array) {
         console.log(numero)
         if (numero % 2 != 0) {
             Impares.push(numero)
         }
+
     }
-    console.log("tu array de números impares", Impares)
+    return `tu array de números impares ${Impares}`
 }
-obtenerImpares([1, 10, 15, 20, 23, 25])
+console.log(obtenerImpares([1, 10, 15, 20, 23, 25]))
 
 // Crear la función sumarArray que acepte como argumento un array numérico y devuelva la suma de los números en el array Array: [1, 2, 3] resultado: 6
 console.log("function sumarArray")
+
 let sum = 0;
 
 function sumarArray(arrayNumerico) {
     for (let i = 0; i < arrayNumerico.length; i++) {
         sum += arrayNumerico[i];
     }
-    console.log("la suma total de la array es", sum)
+    return `la suma total de la array es ${sum}`
 }
-sumarArray([4, 5, 1])
+console.log(sumarArray([4, 5, 1]))
     // Crear la función multiplicarArray que acepte como argumento un array numérico y devuelva la multiplicación de los números en el array Array: [2, 3, 4] resultado: 24
 console.log("function multiplicarArray")
+
 let multi = 1;
 
 function multiplicarArray(arrayNumerico) {
@@ -509,6 +527,7 @@ function multiplicarArray(arrayNumerico) {
 console.log("el resultado de la multiplicacion es", multiplicarArray([4, 2]))
     // Crea una función que dada una array de números, devuelve una nueva array que tenga solo los números que son 5 o más. Ejemplo entrada [3, 6, 8, 2] salida [6, 8]
 console.log("functionNumerosMayor5")
+
 const arrayMasCinco = []
 
 function NumerosMayor5(a) {
@@ -517,30 +536,43 @@ function NumerosMayor5(a) {
             arrayMasCinco.push(number)
         }
     }
-    console.log(arrayMasCinco)
+    return arrayMasCinco
 }
-NumerosMayor5([1, 2, 5, 6, 7])
+console.log(NumerosMayor5([1, 2, 5, 6, 7]))
     // Crea una aplicación que nos pida un número por prompt y con un método se lo pasamos por parámetro para que nos indique si es o no un número primo, debe devolver true si es primo sino false. 
     // Un número primo es aquel que solo puede dividirse entre 1 y sí mismo. Por ejemplo: 25 no es primo, ya que 25 es divisible entre 5, sin embargo, 17 si es primo.
 console.log("app numero primo")
 
+
+
 function NumeroPrimo(n) {
-    n = prompt("Dime un numero");
+    n = prompt("Dime un numero")
     n = Number(n)
         // prompt lo coge pero en formato string, hay que convertirlo
-    console.log(typeof n);
-    if (n == 0 || n == 1 || n == 4) {
-        console.log("no es primo")
-            // Por definición, el 0 y el 1 no son primos. El 4 caso especial para el algoritmo, al dividir 4 entre 2, el ciclo no se cumple y diría que el 4 sí es primo, cosa que es errónea.
-    }
-    for (i = 2; i < n / 2; i++) {
-        if (n % i == 0) {
-            console.log("no es primo")
-        } else {
-            console.log("es primo")
+    console.log("el tipo de dato ahora es", typeof n);
+
+    for (var i = 2; i < n; i++) {
+
+        if (n % i === 0) {
+            console.log("false")
+            return false;
         }
+
     }
+
+    if (n === 1) {
+        console.log("false");
+        return false;
+    } else {
+        console.log("true");
+        return true;
+    }
+
 }
+
+// Por definición, el 0 y el 1 no son primos. El 4 caso especial para el algoritmo, al dividir 4 entre 2, el ciclo no se cumple y diría que el 4 sí es primo, cosa que es errónea.
+// Si no se pudo dividir por ninguno de los de arriba, sí es primo
+
 
 // Crea una función checkPassword con una variable tipo String que contenga una contraseña cualquiera. Después se te pedirá que introduzcas la contraseña (usando prompt), con 3 intentos. Cuando aciertes ya no pedirá más la contraseña y mostrará un mensaje diciendo “Enhorabuena”(ej.un alert). Piensa bien en la condición de salida (3 intentos y si acierta sale, aunque le queden intentos).
 
@@ -597,6 +629,7 @@ function CalculadoraInversa(a, b, c) {
         case "+":
             let suma = a + b
             console.log(suma)
+
             break;
 
         case "-":
